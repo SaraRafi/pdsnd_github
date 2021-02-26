@@ -35,7 +35,6 @@ def get_filters():
 
     print('-'*40)
 
-
 def load_data(city, month, day):
     """
     Loads data for the specified city and filters by month and day if applicable.
@@ -90,7 +89,6 @@ def raw_data_request(df):
 
 print('-'*40)
 
-
 def time_stats(df):
     """Displays statistics on the most frequent times of travel."""
 
@@ -111,10 +109,8 @@ def time_stats(df):
     print("Popular Day of the week : {}".format(popular_day))
     print("Popular Hour : {}".format(popular_hour))
 
-
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
-
 
 def station_stats(df):
     """Displays statistics on the most popular stations and trip."""
@@ -136,11 +132,8 @@ def station_stats(df):
     print("Popular End Station : {}".format(popular_end_station))
     print("Popular Start and End Station Combination {}:".format(popular_station_combination) )
 
-
-
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
-
 
 def trip_duration_stats(df):
     """Displays statistics on the total and average trip duration."""
@@ -190,9 +183,6 @@ def user_stats(df):
     except:
         print("Not Enough Data on Birthyear of Users")
 
-
-
-
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
@@ -207,7 +197,6 @@ def main():
         station_stats(df)
         trip_duration_stats(df)
         user_stats(df)
-
 
 
         restart = input('\nWould you like to restart? Enter yes or no.\n')
